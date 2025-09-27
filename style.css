@@ -182,11 +182,11 @@ footer{
 /* 响应式设计语法 */
 @media screen and (max-width: 1100px) {
     header{
-        height:100px;
+        height:120px;
     }
     .logo {
-        width: 100px;   /* smaller size for mobile/tablet */
-        height: 100px;
+        width: 120px;   /* smaller size for mobile/tablet */
+        height: 120px;
     }
     h1{
         font-size: 22px;
@@ -197,7 +197,7 @@ footer{
     }
     h2{
         left: 120px;
-        top:70px;
+        top:90px;
         line-height: 20px;
         font-size: 18px;
     }
@@ -213,7 +213,7 @@ footer{
         margin-left: 40px;
     }
     button{
-        top: -500px;
+        top: -250px;
     }
     .meun{
         display: block;
@@ -235,15 +235,18 @@ footer{
         margin-bottom: 30px;
     }
     .event img{
-        height:250px;
-        width:250px;
+        height:200px;
+        width:200px;
+        flex-direction: column;
     }
     .event h3{
-    font-size: 20px;
+        font-size:18px;
+        flex-direction: column;
     }
     .event p{
-        font-size: 18px;
+        font-size: 15px;
         padding: 0 1px;
+        flex-direction: column;
     }
     .sum {
         display: flex;
@@ -263,3 +266,4 @@ footer{
         line-height: 1.5;
     }
 }
+
