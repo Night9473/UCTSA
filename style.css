@@ -1,0 +1,265 @@
+*{
+    padding:0;
+    margin:0;
+}
+header{
+    background-color: rgba(30, 30, 30, 0.95);
+    height:150px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+  width: 150px;
+  height: 150px;
+}
+h1{
+    font-size: 35px;
+    left: 190px;
+    top:0;
+    line-height: 70px;
+    color:rgb(255, 255, 255);
+    position: absolute;
+}
+h2{
+    font-size: 30px;
+    top:55px;
+    left: 190px;
+    line-height: 60px;
+    color: rgb(205, 52, 52);
+    position: absolute;
+}
+header ul{
+    font-size: 20px;
+    position: absolute;
+    right: 2vw;
+    right: 2px;
+    top: 65px;
+    line-height: 130px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+header li,p{
+    display: inline;
+    margin-right: 4vw;
+}
+header li,a{
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+.intro{
+    color: white;
+    height: 145vh;
+    background-image: url("event1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Georgia, "Times New Roman", serif;
+}
+.intro p{
+    position: relative;   /* text positioning only */
+    top: 115px;            /* move it down */
+    text-align: center;
+    font-size: 25px;
+    margin-right: 250px;
+    margin-left: 250px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    color:rgb(255, 230, 242);
+    height:150vh;
+}
+.intro h3{
+    position: relative; 
+    font-size:50px;
+    top: 100px;
+    color: white;
+}
+.event{
+    background-color: #ede3db;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 100px 110px 80px;
+}
+.event div{
+    text-align: center;
+}
+.event img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    display: block;
+    justify-content: space-around; /* 三列水平分布 */
+    align-items: flex-start;       /* 顶部对齐 */   
+}
+.event h3{
+    font-size: 22px;
+    margin: 20px 50px;
+    border: 1px solid; /*边框*/
+    padding: 10px, 20px; 
+    border-radius: 20px; /*边框圆角*/
+    color: rgb(0, 0, 0);
+}
+.event p{
+    font-size: 19px;
+    list-style: 1.7em;
+    max-width: 90%;   /* 控制文字块宽度 */
+    margin: 0 auto; 
+}
+.event a{
+    color:rgb(0, 0, 0);
+}
+.event a:hover{
+    text-decoration: underline;
+}
+.event col{
+  width: 30%;                 /* 每列宽度 */
+  text-align: center;         /* 图片和文字居中（可选） */
+}
+
+.sum{
+    display: flex;
+    background-color: rgb(39, 39, 39);
+}
+.info {
+    font-size: 22px;
+    margin-left: 80px;
+    margin-right: 80px;
+    width: 50%;
+    color: #ede3db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+}
+/* 英文段落 */
+.info .english {
+    display: flex;
+    line-height: 1.6;
+    margin-bottom: 50px; /* 英文和中文的間距 */
+}
+/* 中文段落 */
+.info .chinese {
+    display: flex;
+    line-height: 2;  /* 中文行距大一點 */
+}
+.recap{
+    width:800px; 
+    height:700px;
+}
+button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    top: -470px; /* Use margin instead of top */
+}
+footer{
+    background-color: black;
+    color: #B7B7B7;
+    height: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:14px;
+}
+.meun{
+    display: none;
+    z-index: 9999;
+}
+/* 响应式设计语法 */
+@media screen and (max-width: 1100px) {
+    header{
+        height:100px;
+    }
+    .logo {
+        width: 100px;   /* smaller size for mobile/tablet */
+        height: 100px;
+    }
+    h1{
+        font-size: 22px;
+        line-height: 25px;
+        left:120px;
+        top:10px;
+        right: 30px;
+    }
+    h2{
+        left: 120px;
+        top:70px;
+        line-height: 20px;
+        font-size: 18px;
+    }
+    header ul{
+        display: none;
+    }
+    .intro h3{
+        font-size: 40px;
+    }
+    .intro p{
+        font-size: 20px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    button{
+        top: -500px;
+    }
+    .meun{
+        display: block;
+        font-size: 70px;
+        position: absolute;
+        background-color: transparent;
+        color: white;
+        top: 15px;
+        right:20px;
+        border: none;
+        cursor: pointer;
+        z-index: 9999;
+    }
+    .event{
+        flex-direction: column;
+        padding: 60px,0;
+    }
+    .event.div{
+        margin-bottom: 30px;
+    }
+    .event img{
+        height:250px;
+        width:250px;
+    }
+    .event h3{
+    font-size: 20px;
+    }
+    .event p{
+        font-size: 18px;
+        padding: 0 1px;
+    }
+    .sum {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;    /* 让图片和文字居中 */
+        text-align: center;
+    }
+    .recap{
+        flex-direction: column;
+        max-width: 100%;
+        height:auto;
+        padding: 20px;
+    }
+    .info .chinese, .info .english{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}

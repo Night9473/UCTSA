@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC TSA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <img src="TSA logo.png" alt="TSA" class="logo">
+    <h1>University of Cincinnati Taiwanese Student Association</h1>
+    <h2>辛辛那提大學台灣文化交流社團</h2>
+    <button class="menu">&#9776;</button>
+    <nav>
+    <ul>
+        <li><strong><a href="https://www.instagram.com/uc_tsa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></strong></p>
+        <li><strong><a href="https://l.instagram.com/?u=https%3A%2F%2Fgroupme.com%2Fjoin_group%2F108254602%2Fh9pryfEZ%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaciTwMncckwqCY48TDCnNPV04deIaoUdQaROgfjhIXwZwC8PdLKtyigMhLVsQ_aem_tBIyz-wsozU8A9_36X7E_A&e=AT1C4bKumI-iu7bLqjpLgDlHH4JmDTN8nMFlKqzGwCQrr78cnBP2gQpStWhURNEUQXBTAD1VE33Ai6HTRHYG2K9QkIRD6s3CLv3TPS-6pA" target="_blank">GroupMe</a></strong></p>
+        <li><strong><a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2Fgroups%2FUCTSA%2F%3Fref%3Dshare&e=AT1k1wWIEZlYnoHkMKn9XFkx-hGMST7r6TqGQyYX5OK8x2-CNghabK_1LraZArTtviPlaMlh-9gNeg5s0rhBg1f5-havn8iFSNo8y8WrHg" target="_blank">FaceBook</a></strong></p>
+        <li><strong><a href="https://l.instagram.com/?u=https%3A%2F%2Fyoutube.com%2F%40uctsa%3Fsi%3DxEM3UkJR4_NV0TfQ%26fbclid%3DPAZXh0bgNhZW0CMTEAAadkDKYMlYWB2V9VjgueZ7JOGNBJz4E25jTlYh3_-dExJts8Ll7GAWhj_3DuYw_aem_qMBquvILGVF3BQv6qkrY8w&e=AT3ttVnfJedtJDAMN3szgjumi_a9cqqfCcqDBFy2oFYKIFNnGA12jw7Bj6enEEaIhjO2U8ZpsCbMhySmtKI-eV4My_V1S66x9xsektPWHw" target="_blank">YouTube</a></strong></p>
+    </ul>
+    </nav>
+    </header>
+    <main>
+    <section class="intro">
+    <h3 id="about"><strong>About Us:</strong></h3>
+    <p id="text">
+      🌸 Welcome to the UC Taiwanese Club! 🌸<br>
+      We are a warm and friendly community dedicated to sharing and celebrating Taiwanese culture, food, and traditions. Our goal is to create a space where students can connect, learn, and have fun together. Whether you're from Taiwan, have Taiwanese friends, or are simply curious about the culture, everyone is welcome to join!
+    </p>
+    <button onclick="translateText()">Translate/翻譯</button>
+  </section>
+
+  <script>
+    let translated = false;
+
+    function translateText() {
+      const about = document.getElementById("about");
+      const text = document.getElementById("text");
+
+      if (!about || !text) {
+        alert("找不到元素！");
+        return;
+      }
+
+      if (!translated) {
+        about.innerHTML = "社團簡介";
+        text.innerHTML = "🌸 歡迎加入 UC 台灣同學會! 🌸<br>我們是一個溫暖又有愛的大家庭，致力於分享和慶祝台灣的文化、美食與傳統。這裡是讓大家相聚、交流、學習、一起玩樂的好地方！不管你是不是來自台灣、有沒有台灣朋友，或只是單純對台灣文化感到好奇，都非常歡迎你加入我們～💖";
+        translated = true;
+      } else {
+        about.innerHTML = "<strong>About Us:</strong>";
+        text.innerHTML = "🌸 Welcome to the UC Taiwanese Club! 🌸<br>We are a warm and friendly community dedicated to sharing and celebrating Taiwanese culture, food, and traditions. Our goal is to create a space where students can connect, learn, and have fun together. Whether you're from Taiwan, have Taiwanese friends, or are simply curious about the culture, everyone is welcome to join!";
+        translated = false;
+      }
+    }
+  </script>
+    <section class="event">
+        <div>
+            <img src="calender.png" alt="Event Calendar">
+            <p><h3><strong>Event Calendar<br>活動日曆</strong></h3></p>
+            <p>Come check out our events this semester!<br>來看看我們這學期的活動吧！</p>
+        </div>
+        <div>
+            <img src="people.jpg" alt="eboard members">
+            <p><h3><strong><a href="https://www.instagram.com/p/DNvsucd4vnm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">E-board Members<br>學生幹部</a></strong></h3></p>
+            <p>Our E-board members for 2025-2026<br>2025-2026學年學生幹部</p>
+        </div>
+        <div>
+            <img src="sheet.png" alt="E-board application">
+            <p><h3><strong>E-board application<br>學生幹部申請</strong></h3></p>
+            <p>Interested in joinging our e-board? <br>Apply today!<br>有興趣加入我們的執行委員會嗎？</p>
+        </div>
+    </section>
+    <section class="sum">
+    <img src="Recap.jpg" alt="Recap from TSA"  class="recap">
+    <div class="info">
+        <div class="english">
+        We can't wait to meet you! Come join our events, make new friends, 
+        and celebrate Taiwanese culture together. Follow us on Instagram 
+        and stay tuned for updates! 💖
+        </div>
+        <div class="chinese">
+        感謝你來訪我們的頁面! 我們已經迫不及待想見到你啦 💖  
+        快來參加我們的活動、結交新朋友，一起享受台灣文化吧！  
+        記得追蹤我們的 Instagram, 隨時掌握最新消息！
+        </div>
+    </div>
+    </section>
+    </main>
+    <footer>
+        <p>Copyright © 2025 UCTSA All Rights Reserved.</p>
+    </footer>
+</body>
+    
+    
+</html>
