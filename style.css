@@ -191,12 +191,12 @@ footer{
     h1{
         font-size: 22px;
         line-height: 25px;
-        left:120px;
+        left:135px;
         top:10px;
         right: 30px;
     }
     h2{
-        left: 120px;
+        left: 135px;
         top:90px;
         line-height: 20px;
         font-size: 18px;
@@ -213,7 +213,7 @@ footer{
         margin-left: 40px;
     }
     button{
-        top: -250px;
+        top: -300px;
     }
     .meun{
         display: block;
@@ -242,9 +242,10 @@ footer{
     .event h3{
         font-size:18px;
         flex-direction: column;
+        margin: 20px 20px;
     }
     .event p{
-        font-size: 15px;
+        font-size: 17px;
         padding: 0 1px;
         flex-direction: column;
     }
@@ -266,4 +267,5 @@ footer{
         line-height: 1.5;
     }
 }
+
 
